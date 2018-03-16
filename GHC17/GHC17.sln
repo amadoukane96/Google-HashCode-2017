@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CSolver", "CSolver\CSolver.vcxproj", "{3EB67A6B-C2AC-48C3-B57B-428798772878}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CTimer", "CTimer\CTimer.vcxproj", "{109BAA9E-B619-4D0C-8413-5F43DA0FDD47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "input", "input", "{D6C237B5-3BE5-4528-B38D-167077508D8C}"
+	ProjectSection(SolutionItems) = preProject
+		..\input\charleston_road.in = ..\input\charleston_road.in
+		..\input\lets_go_higher.in = ..\input\lets_go_higher.in
+		..\input\opera.in = ..\input\opera.in
+		..\input\rue_de_londres.in = ..\input\rue_de_londres.in
+		..\input\toy.in = ..\input\toy.in
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "output", "output", "{A5DCFF36-2983-4A0C-85EB-7B7B2619EDFF}"
+	ProjectSection(SolutionItems) = preProject
+		..\output\charleston_road.out = ..\output\charleston_road.out
+		..\output\lets_go_higher.out = ..\output\lets_go_higher.out
+		..\output\opera.out = ..\output\opera.out
+		..\output\rue_de_londres.out = ..\output\rue_de_londres.out
+		..\output\toy.out = ..\output\toy.out
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CReferee", "CReferee\CReferee.vcxproj", "{4CE5B1B7-F695-4B3D-9D9D-416C8BB3A97D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EB67A6B-C2AC-48C3-B57B-428798772878}.Debug|x64.ActiveCfg = Debug|x64
+		{3EB67A6B-C2AC-48C3-B57B-428798772878}.Debug|x64.Build.0 = Debug|x64
+		{3EB67A6B-C2AC-48C3-B57B-428798772878}.Debug|x86.ActiveCfg = Debug|Win32
+		{3EB67A6B-C2AC-48C3-B57B-428798772878}.Debug|x86.Build.0 = Debug|Win32
+		{3EB67A6B-C2AC-48C3-B57B-428798772878}.Release|x64.ActiveCfg = Release|x64
+		{3EB67A6B-C2AC-48C3-B57B-428798772878}.Release|x64.Build.0 = Release|x64
+		{3EB67A6B-C2AC-48C3-B57B-428798772878}.Release|x86.ActiveCfg = Release|Win32
+		{3EB67A6B-C2AC-48C3-B57B-428798772878}.Release|x86.Build.0 = Release|Win32
+		{109BAA9E-B619-4D0C-8413-5F43DA0FDD47}.Debug|x64.ActiveCfg = Debug|x64
+		{109BAA9E-B619-4D0C-8413-5F43DA0FDD47}.Debug|x64.Build.0 = Debug|x64
+		{109BAA9E-B619-4D0C-8413-5F43DA0FDD47}.Debug|x86.ActiveCfg = Debug|Win32
+		{109BAA9E-B619-4D0C-8413-5F43DA0FDD47}.Debug|x86.Build.0 = Debug|Win32
+		{109BAA9E-B619-4D0C-8413-5F43DA0FDD47}.Release|x64.ActiveCfg = Release|x64
+		{109BAA9E-B619-4D0C-8413-5F43DA0FDD47}.Release|x64.Build.0 = Release|x64
+		{109BAA9E-B619-4D0C-8413-5F43DA0FDD47}.Release|x86.ActiveCfg = Release|Win32
+		{109BAA9E-B619-4D0C-8413-5F43DA0FDD47}.Release|x86.Build.0 = Release|Win32
+		{4CE5B1B7-F695-4B3D-9D9D-416C8BB3A97D}.Debug|x64.ActiveCfg = Debug|x64
+		{4CE5B1B7-F695-4B3D-9D9D-416C8BB3A97D}.Debug|x64.Build.0 = Debug|x64
+		{4CE5B1B7-F695-4B3D-9D9D-416C8BB3A97D}.Debug|x86.ActiveCfg = Debug|Win32
+		{4CE5B1B7-F695-4B3D-9D9D-416C8BB3A97D}.Debug|x86.Build.0 = Debug|Win32
+		{4CE5B1B7-F695-4B3D-9D9D-416C8BB3A97D}.Release|x64.ActiveCfg = Release|x64
+		{4CE5B1B7-F695-4B3D-9D9D-416C8BB3A97D}.Release|x64.Build.0 = Release|x64
+		{4CE5B1B7-F695-4B3D-9D9D-416C8BB3A97D}.Release|x86.ActiveCfg = Release|Win32
+		{4CE5B1B7-F695-4B3D-9D9D-416C8BB3A97D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

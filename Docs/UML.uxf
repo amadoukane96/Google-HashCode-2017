@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>150</y>
+      <w>250</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>CSolver&lt;FAlgo&gt;
+--
+data: CInput
+algo: FAlgo
+--
++CSolver(algo: FAlgo, filename: string)
++solve(): CSolution
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>260</y>
+      <w>190</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>CInput
+--
+map: char**
+rows: unsigned int
+columns: unsgined int
+budget: unsgined int
+routerCost: unsgined int
+bakboneCost: unsgined int
+routerRange: unsgined int
+backbone: Point
+--
++CInput(filename: String)
++parse(string: filename): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>170</y>
+      <w>200</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;180.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>170</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>CSolution
+--
+router: vector&lt;Point&gt;
+connexions: vector&lt;Path&gt;
+cost: unsigned int
+score: unsigned int
+--
++CSolution()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>210</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0,1
+trouve</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>460</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Path
+--
+vertex: vector&lt;Point&gt;
+--
+un typedef / alias
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>850</x>
+      <y>280</y>
+      <w>80</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+utilise &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>400</y>
+      <w>100</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Point
+--
+r: unsigned int
+c: unsgined int
+--
+un struct.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>390</y>
+      <w>270</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+utilise &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>240</y>
+      <w>250</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;200.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>80</x>
+      <y>40</y>
+      <w>300</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>*Conception UML du solveur*
+--
+bg=green
+la class principal est CSolver, 
+elle gére les entrées (CInput)
+pour produire une solution(CSolution)
+grâce à un algorithme donné (Foncteur FAlgo).
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
